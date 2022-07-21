@@ -9,5 +9,5 @@ const getSpecPath = (configPath = 'cypress.config.js') => {
   return specPath
 }
 
-const files = glob.sync(`${getSpecPath()}/*.js`)
-process.stdout.write(JSON.stringify(files))
+// const files = glob.sync(`${getSpecPath()}/*.js`)
+// process.stdout.write(JSON.stringify(files))
