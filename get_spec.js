@@ -4,8 +4,8 @@ const fs = require('fs')
 const getSpecPath = (configPath = 'cypress.config.js') => {
   const rawData = fs.readFileSync(configPath)
   const config = JSON.parse(rawData)
-  const specPath =
-    config.integrationFolder ?? config.e2e?.specPattern ?? 'cypress/e2e'
+  const specPath = 'cypress/e2e'
+//     config.integrationFolder ?? config.e2e?.specPattern ?? 'cypress/e2e'
   return specPath
 }
 
