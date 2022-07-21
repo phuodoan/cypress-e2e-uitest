@@ -11,10 +11,10 @@
 ## Project Structure
 ```
 ├── cypress
-│   ├── fixtures        -- Mock json files and test data
-│   ├── integration     -- This is where the test is
-│   ├── pages           -- Page objects
-│   ├── plugins
+│   ├── datasets        -- Mock json files and test data
+│   ├── e2e             -- This is where the test is
+│   ├── interface       -- Page objects
+│   ├── reports
 │   └── support
 ```
 
