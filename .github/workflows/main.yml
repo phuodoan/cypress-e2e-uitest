@@ -1,5 +1,11 @@
 name: Run Tests
-on: push
+on: 
+  workflow_dispatch:
+    inputs:
+      configfile:
+        description: 'Config file'
+        required: true
+        default: 'master'
 
 jobs:
   find-specs:
