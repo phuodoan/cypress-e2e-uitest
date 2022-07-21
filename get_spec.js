@@ -1,11 +1,11 @@
 const glob = require('glob')
 const fs = require('fs')
 
-const getSpecPath = (configPath = 'cypress.json') => {
+const getSpecPath = (configPath = 'cypress.json.js') => {
   const rawData = fs.readFileSync(configPath)
   const config = JSON.parse(rawData)
   const specPath =
-    config.integrationFolder ?? config.e2e?.specPattern ?? 'cypress/integration'
+    config.integrationFolder ?? config.e2e?.specPattern ?? 'cypress/e2e'
   return specPath
 }
 
