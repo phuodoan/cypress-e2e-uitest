@@ -6,6 +6,7 @@ const getSpecPath = (configPath = 'cypress.config.js') => {
   const config = JSON.parse(rawData)
   const specPath =
     config.integrationFolder ?? config.e2e?.specPattern ?? 'cypress/e2e'
+  console.log(specPath)
   return specPath
 }
 
