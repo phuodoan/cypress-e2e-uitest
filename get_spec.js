@@ -1,7 +1,7 @@
 const glob = require('glob')
 const fs = require('fs')
 
-const getSpecPath = (configPath = 'cypress.json.js') => {
+const getSpecPath = (configPath = 'cypress.config.js') => {
   const rawData = fs.readFileSync(configPath)
   const config = JSON.parse(rawData)
   const specPath =
