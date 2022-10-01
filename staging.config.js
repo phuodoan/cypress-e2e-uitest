@@ -37,7 +37,7 @@ module.exports = defineConfig({
   e2e: {
     defaultCommandTimeout: 10000,
     supportFile: 'cypress/support/e2e.js',
-    baseUrl: "https://agronomic-trial.stage.apac.yaradigitallabs.io/",
+    // baseUrl: "https://agronomic-trial.stage.apac.yaradigitallabs.io/",
     setupNodeEvents(on, config) {
       // require('cypress-mochawesome-reporter/plugin')(on);
     },

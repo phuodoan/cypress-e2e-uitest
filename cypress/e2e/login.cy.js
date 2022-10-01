@@ -1,6 +1,6 @@
 var email = 'approver@mail.com'
 var password = 'StrongPassword!0'
-describe('Test cases on login page', () => {
+describe.skip('Test cases on login page', () => {
   before(()=>{
     //do something
   })

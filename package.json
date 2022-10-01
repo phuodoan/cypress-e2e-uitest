@@ -9,7 +9,7 @@
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "delete:reports": "rm cypress/results/* || true", 
+    "delete:reports": "rm cypress/results/* || true",
     "test": "rm cypress/results/*",
     "combine:reports": "jrm cypress/results/combined-report.xml \"cypress/results/*.xml\"",
     "prereport": "npm run delete:reports",
