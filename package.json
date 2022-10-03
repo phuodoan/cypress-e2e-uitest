@@ -15,9 +15,9 @@
     "prereport": "npm run delete:reports",
     "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "postreport": "npm run combine:reports",
-    "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:firefox": "cypress run --browser firefox",
-    "cy:run:edge": "cypress run --browser edge",
+    "cy:run:chrome": "cypress run --browser chrome --config-file staging.config.js",
+    "cy:run:firefox": "cypress run --browser firefox --config-file staging.config.js",
+    "cy:run:edge": "cypress run --browser edge --config-file staging.config.js",
     "cy:run:electron": "cypress run"
   }
 }

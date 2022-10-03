@@ -31,7 +31,7 @@ jobs:
 
       - run: |
           npm ci
-          npm run cy:run:${{ matrix.browser }} -- --spec ${{ matrix.spec }}
+          npx cypress run --config-file staging.config.js --browser --${{ matrix.browser }} --spec ${{ matrix.spec }}
       - uses: actions/upload-artifact@v2
         with:
           name: reports
